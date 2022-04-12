@@ -1,1 +1,47 @@
-<p>course works!</p>
+<div class="card">
+    <img [src]="imgUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{configs['spayee:title'] | uppercase}} - MRP <span>{{configs['spayee:mrp'] }}</span>
+        </h5>
+        <span><b>Course date: </b> {{currentDate | date: 'MMM/dd/y h:mm:ss a' | uppercase}}</span>
+        <p class="card-text">make up the bulk of the card's
+            content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+
+   <!-- <div class="container">
+        <div class="row">
+            <div *ngFor="let element of Box1" class="col-3 ">
+                <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="{{element.imagelink}}" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-title"href="#">{{element.title | uppercase}}</p>
+                      <p class="card-text">{{element.text1}}</p>
+                      <p class="card-text">{{element.text2}}</p>
+                      <a href="#" class="btn btn-primary">Buy This Course</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <br> <br>
+    
+    <div class="container">
+        <b>Cloud Computing</b>
+        <br><br>
+        <div class="row">
+            <div *ngFor="let element of Box2" class="col-3 ">
+                <div class="card" style="width: 16rem;">
+                    <img class="card-img-top" src="{{element.imagelink}}" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-title"href="#">{{element.title | uppercase}}</p>
+                      <p class="card-text">{{element.text1}}</p>
+                      <p class="card-text">{{element.text2}}</p>
+                      <a href="#" class="btn btn-primary">Buy This Course</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> -->
